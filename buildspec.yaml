@@ -11,7 +11,7 @@ phases:
       - AWS_REGION=us-east-1
       - AWS_ACCOUNT_ID=381492308048
       - echo accountID- $AWS_ACCOUNT_ID
-      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 381492308048.dkr.ecr.us-east-1.amazonaws.com
       - echo Granting execution permissions to Gradle wrapper...
       - chmod +x ./gradlew
       - echo Cleaning up previous builds...
